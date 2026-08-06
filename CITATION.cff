@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this research artifact, please cite it using the metadata below."
+title: "Community Terminology for LLM Evaluation: PURA Summer 2026 Final Research Artifact"
+type: dataset
+authors:
+  - family-names: Yan
+    given-names: Guanjun
+    affiliation: Georgia Institute of Technology
+version: 1.0.0
+date-released: 2026-08-06
+keywords:
+  - community terminology
+  - large language model evaluation
+  - gaming
+  - cybersecurity
+  - computational sociolinguistics
+  - annotation
+  - dataset
+abstract: >-
+  A curated research artifact for studying how large language models understand
+  opaque, lexicalized, niche, emerging, and community-specific terminology in
+  authentic gaming and cybersecurity contexts.

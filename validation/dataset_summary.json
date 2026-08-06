@@ -1,0 +1,108 @@
+{
+  "dataset_name": "Community-Specific Gaming and Cybersecurity Terminology",
+  "release_version": "1.0.0",
+  "total_records": 181,
+  "records_by_domain": {
+    "cybersecurity": 74,
+    "gaming": 107
+  },
+  "records_by_linguistic_construction": {
+    "Metaphor": 74,
+    "Compound": 29,
+    "Initialism": 19,
+    "Affixation": 12,
+    "Blending": 11,
+    "Multiword Expression": 8,
+    "Acronym": 6,
+    "Semantic Shift": 5,
+    "Abbreviation": 4,
+    "Clipping": 4,
+    "Borrowing": 3,
+    "Functional Shift": 3,
+    "Code Word": 1,
+    "Community-specific Jargon": 1,
+    "Meme Expression": 1
+  },
+  "records_by_source_hostname": {
+    "reddit.com": 39,
+    "steamcommunity.com": 20,
+    "speedrun.com": 14,
+    "gaming.stackexchange.com": 12,
+    "security.stackexchange.com": 10,
+    "ctftime.org": 9,
+    "github.com": 8,
+    "us.forums.blizzard.com": 6,
+    "portswigger.net": 5,
+    "forums.warframe.com": 5,
+    "forum.hackthebox.com": 4,
+    "microsoft.com": 4,
+    "enisa.europa.eu": 4,
+    "forum.square-enix.com": 4,
+    "bungie.net": 4,
+    "icy-veins.com": 4,
+    "ssbwiki.com": 3,
+    "reverseengineering.stackexchange.com": 2,
+    "unit42.paloaltonetworks.com": 2,
+    "elastic.co": 2,
+    "ncsc.gov.uk": 2,
+    "nist.gov": 2,
+    "cert.europa.eu": 2,
+    "news.ycombinator.com": 2,
+    "bulbapedia.bulbagarden.net": 2,
+    "thebalanceffxiv.com": 2,
+    "attack.mitre.org": 1,
+    "arxiv.org": 1,
+    "n1ght-w0lf.github.io": 1,
+    "r1ru.github.io": 1,
+    "hackmd.io": 1,
+    "huntress.com": 1,
+    "sentinelone.com": 1,
+    "wiki.bedrock.dev": 1
+  },
+  "records_by_source_family": {
+    "cybersecurity": {
+      "Industry Research": 15,
+      "Reddit": 15,
+      "Technical Q&A": 13,
+      "CTF/Exploit Writeups": 12,
+      "Institutional Reports": 11,
+      "Hack The Box Forums": 4,
+      "GitHub Issues/Discussions": 3,
+      "Hacker News": 1
+    },
+    "gaming": {
+      "Reddit": 20,
+      "Official Game Forums": 19,
+      "Steam Community": 19,
+      "Arqade": 16,
+      "Speedrun.com Forums": 14,
+      "Game Wikis/Guides": 13,
+      "GitHub Issues/Discussions": 5,
+      "Hacker News": 1
+    }
+  },
+  "missing_values_by_field": {
+    "id": 0,
+    "domain": 0,
+    "term": 0,
+    "linguistic_construction": 0,
+    "community_subcommunity": 0,
+    "real_usage_example": 0,
+    "source_url": 0
+  },
+  "duplicate_terms": {
+    "group_count": 0,
+    "record_count": 0,
+    "groups": {}
+  },
+  "duplicate_source_urls": {
+    "group_count": 1,
+    "record_count": 2,
+    "groups": {
+      "https://www.reddit.com/r/it/comments/1pmohm0/mfa_fatigue_attacks_are_getting_out_of_control/": [
+        "cybersecurity_012",
+        "cybersecurity_066"
+      ]
+    }
+  }
+}

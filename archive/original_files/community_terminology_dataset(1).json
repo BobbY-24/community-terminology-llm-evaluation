@@ -1,0 +1,1669 @@
+{
+  "dataset_name": "Community-Specific Gaming and Cybersecurity Terminology",
+  "version": "1.0",
+  "description": "A curated dataset of niche and community-specific terminology from gaming and cybersecurity discussions, with authentic usage examples and traceable source URLs.",
+  "schema": {
+    "id": "Unique record identifier.",
+    "domain": "Top-level domain: cybersecurity or gaming.",
+    "term": "Target community-specific term or expression.",
+    "linguistic_construction": "Annotated form or construction category.",
+    "community_subcommunity": "Community and narrower usage context.",
+    "real_usage_example": "Authentic usage sentence collected from the source.",
+    "source_url": "URL for the authentic usage example."
+  },
+  "statistics": {
+    "total_records": 181,
+    "records_by_domain": {
+      "cybersecurity": 74,
+      "gaming": 107
+    },
+    "records_by_linguistic_construction": {
+      "Metaphor": 74,
+      "Compound": 29,
+      "Initialism": 19,
+      "Affixation": 12,
+      "Blending": 11,
+      "Multiword Expression": 8,
+      "Acronym": 6,
+      "Semantic Shift": 5,
+      "Abbreviation": 4,
+      "Clipping": 4,
+      "Borrowing": 3,
+      "Functional Shift": 3,
+      "Code Word": 1,
+      "Community-specific Jargon": 1,
+      "Meme Expression": 1
+    }
+  },
+  "records": [
+    {
+      "id": "cybersecurity_001",
+      "domain": "cybersecurity",
+      "term": "Pass the hash",
+      "linguistic_construction": "Multiword Expression",
+      "community_subcommunity": "Red Team / Windows Credential Abuse",
+      "real_usage_example": "It is my understanding that pass the hash works by stealing hashes from LSASS of users that have logged on to the system.",
+      "source_url": "https://www.reddit.com/r/AskNetsec/comments/c323rh/pass_the_hash_questions/"
+    },
+    {
+      "id": "cybersecurity_002",
+      "domain": "cybersecurity",
+      "term": "Detections as Code",
+      "linguistic_construction": "Multiword Expression",
+      "community_subcommunity": "Blue Team / Detection Engineering",
+      "real_usage_example": "Detections as Code using Sigma. Anyone done This?",
+      "source_url": "https://www.reddit.com/r/blueteamsec/comments/yqx3dg/detections_as_code_using_sigma_anyone_done_this/"
+    },
+    {
+      "id": "cybersecurity_003",
+      "domain": "cybersecurity",
+      "term": "LoLBins",
+      "linguistic_construction": "Blending",
+      "community_subcommunity": "Blue Team / Living-off-the-Land Detection",
+      "real_usage_example": "Valid, but even with MFA, token theft is a thing. If an admin session gets hijacked, phishing-resistant auth won't save you from LoLBins. Detections for non-tech users is easy mode. I'm talking about the nightmare of catching a 'ghost' in an admin account where the behavior is already high-priv. Is there a real signal for that, or are we just relying on vibes?",
+      "source_url": "https://www.reddit.com/r/blueteamsec/comments/1simlh1/if_an_attacker_uses_a_living_off_the_binary/"
+    },
+    {
+      "id": "cybersecurity_004",
+      "domain": "cybersecurity",
+      "term": "Kerberoasting",
+      "linguistic_construction": "Blending",
+      "community_subcommunity": "Red Team / Active Directory Operations",
+      "real_usage_example": "Kerberoasting may not be patchable, but Windows COM Privilege Escalation (CVE-2017-0213) is, and was a key component for the team's ability to win the engagement.",
+      "source_url": "https://www.reddit.com/r/netsec/comments/8l0afg/kerberoasting_exploiting_unpatched_systems_a_day/"
+    },
+    {
+      "id": "cybersecurity_005",
+      "domain": "cybersecurity",
+      "term": "OEP",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Reverse Engineering / Binary Unpacking",
+      "real_usage_example": "Thanks. The approach that I had seen was, \"the packer will save all the registers someplace, do its magic, and then restore the registers and continue at the OEP like nothing happened. Find the place where it stores the registers, set a memory breakpoint, and start again after the breakpoint hits.\" It's worked OK so far.",
+      "source_url": "https://www.reddit.com/r/ReverseEngineering/comments/eogzd/good_resource_on_binary_unpacking/"
+    },
+    {
+      "id": "cybersecurity_006",
+      "domain": "cybersecurity",
+      "term": "NTLM relay",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Cybersecurity / Windows Authentication",
+      "real_usage_example": "NTLM Relay Attack PetitPotam: What We Know So Far - Reddit",
+      "source_url": "https://www.reddit.com/r/cybersecurity/comments/oscq5s/ntlm_relay_attack_petitpotam_what_we_know_so_far/"
+    },
+    {
+      "id": "cybersecurity_007",
+      "domain": "cybersecurity",
+      "term": "golden ticket",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Cybersecurity / Kerberos Defense",
+      "real_usage_example": "I had a question: if you suspect possible golden ticket exploit, if you clear all Active sessions will this mitigate any golden tickets are being used?",
+      "source_url": "https://www.reddit.com/r/cybersecurity/comments/15cgeat/mitigation_of_golden_ticket_exploit/"
+    },
+    {
+      "id": "cybersecurity_008",
+      "domain": "cybersecurity",
+      "term": "credential stuffing",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Cybersecurity / Account Takeover",
+      "real_usage_example": "Credential stuffing is constant, so many different groups doing it at the same time.",
+      "source_url": "https://www.reddit.com/r/cybersecurity/comments/1jnrjlb/how_big_is_credential_stuffing/"
+    },
+    {
+      "id": "cybersecurity_009",
+      "domain": "cybersecurity",
+      "term": "sockpuppet",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "OSINT / Persona Management",
+      "real_usage_example": "My process for setting up anonymous sockpuppet accounts.",
+      "source_url": "https://www.reddit.com/r/OSINT/comments/dp70jr/my_process_for_setting_up_anonymous_sockpuppet/"
+    },
+    {
+      "id": "cybersecurity_010",
+      "domain": "cybersecurity",
+      "term": "dead drop resolver",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Blue Team / Malware Command-and-Control",
+      "real_usage_example": "Use of a dead drop resolver may protect back-end C2 infrastructure from discovery through malware binary analysis.",
+      "source_url": "https://attack.mitre.org/techniques/T1102/001/"
+    },
+    {
+      "id": "cybersecurity_011",
+      "domain": "cybersecurity",
+      "term": "impossible travel",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Cybersecurity / Identity Analytics",
+      "real_usage_example": "Do you have any InsightIDR Threat Hunting Queries that can detect impossible travel activities? Or any threat hunting queries in general?",
+      "source_url": "https://www.reddit.com/r/cybersecurity/comments/1l8nbz6/impossible_travel_rapid7/"
+    },
+    {
+      "id": "cybersecurity_012",
+      "domain": "cybersecurity",
+      "term": "MFA fatigue",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "System Administration / Authentication UX",
+      "real_usage_example": "MFA fatigue attacks are getting out of control—time to rethink our authentication strategy?",
+      "source_url": "https://www.reddit.com/r/it/comments/1pmohm0/mfa_fatigue_attacks_are_getting_out_of_control/"
+    },
+    {
+      "id": "cybersecurity_013",
+      "domain": "cybersecurity",
+      "term": "mass-assignment",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Web Security / API Object Binding",
+      "real_usage_example": "Mass assignment vulnerabilities are common in REST APIs, leading to unauthorized manipulation of sensitive data.",
+      "source_url": "https://arxiv.org/abs/2405.01111"
+    },
+    {
+      "id": "cybersecurity_014",
+      "domain": "cybersecurity",
+      "term": "cache poisoning",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Bug Bounty / Web Cache Testing",
+      "real_usage_example": "I'm currently testing cache poisoning on a javascript file, i've tried a few payloads(like x-forward headers, cachebuster parameter..) But i didn't have any luck yet.",
+      "source_url": "https://www.reddit.com/r/bugbounty/comments/1j9t7fw/cache_poisoning_payloads/"
+    },
+    {
+      "id": "cybersecurity_015",
+      "domain": "cybersecurity",
+      "term": "N-day",
+      "linguistic_construction": "Affixation",
+      "community_subcommunity": "Netsec / Vulnerability Exploitation",
+      "real_usage_example": "Exploiting an N-day vBulletin PHP Object Injection Vulnerability",
+      "source_url": "https://www.reddit.com/r/netsec/comments/z5cql6/exploiting_an_nday_vbulletin_php_object_injection/"
+    },
+    {
+      "id": "cybersecurity_016",
+      "domain": "cybersecurity",
+      "term": "out-of-band",
+      "linguistic_construction": "Multiword Expression",
+      "community_subcommunity": "Nuclei / Vulnerability Templates",
+      "real_usage_example": "Identify Out-of-Band vulnerabilities | Blind SQL Injection via OOB",
+      "source_url": "https://github.com/projectdiscovery/nuclei/issues/7505"
+    },
+    {
+      "id": "cybersecurity_017",
+      "domain": "cybersecurity",
+      "term": "OAST",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Nuclei / Out-of-Band Testing",
+      "real_usage_example": "Unintended OAST (Out-of-Band Application Security Testing) callbacks — runtime values containing `{{interactsh-url}}` markers being allocated as real interaction URLs.",
+      "source_url": "https://github.com/projectdiscovery/nuclei/issues/7500"
+    },
+    {
+      "id": "cybersecurity_018",
+      "domain": "cybersecurity",
+      "term": "DCSyncing",
+      "linguistic_construction": "Affixation",
+      "community_subcommunity": "Impacket / Active Directory Replication",
+      "real_usage_example": "DCSyncing a RODC using secretsdump and the default method DRSUAPI fails #1552",
+      "source_url": "https://github.com/fortra/impacket/issues/1552"
+    },
+    {
+      "id": "cybersecurity_019",
+      "domain": "cybersecurity",
+      "term": "padding oracle",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Information Security Stack Exchange / Cryptographic Attacks",
+      "real_usage_example": "How to protect against \"padding oracle attacks.\"",
+      "source_url": "https://security.stackexchange.com/questions/38942/how-to-protect-against-padding-oracle-attacks"
+    },
+    {
+      "id": "cybersecurity_020",
+      "domain": "cybersecurity",
+      "term": "pepper",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Information Security Stack Exchange / Password Hashing",
+      "real_usage_example": "So, as long as the pepper is sufficiently long, it is an improvement.",
+      "source_url": "https://security.stackexchange.com/questions/3272/password-hashing-add-salt-pepper-or-is-salt-enough"
+    },
+    {
+      "id": "cybersecurity_021",
+      "domain": "cybersecurity",
+      "term": "control-flow flattening",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Reverse Engineering Stack Exchange / Obfuscation",
+      "real_usage_example": "I am trying to reverse engineer an executable that uses a lot of control-flow flattening obfuscation.",
+      "source_url": "https://reverseengineering.stackexchange.com/questions/17758/how-to-deal-with-heavy-control-flow-flattening"
+    },
+    {
+      "id": "cybersecurity_022",
+      "domain": "cybersecurity",
+      "term": "TOFU",
+      "linguistic_construction": "Acronym",
+      "community_subcommunity": "Information Security Stack Exchange / Trust Models",
+      "real_usage_example": "I would like to implement kind of a trust-on-first-use (TOFU) scheme with TLS:",
+      "source_url": "https://security.stackexchange.com/questions/153093/verify-that-a-second-tls-connection-comes-from-the-same-client"
+    },
+    {
+      "id": "cybersecurity_023",
+      "domain": "cybersecurity",
+      "term": "key stretching",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Information Security Stack Exchange / Password Derivation",
+      "real_usage_example": "You are correct that tailoring a key stretching algorithm's strength to the available hardware resources is superior to using a fixed strength.",
+      "source_url": "https://security.stackexchange.com/questions/101020/key-stretching-approaches"
+    },
+    {
+      "id": "cybersecurity_024",
+      "domain": "cybersecurity",
+      "term": "opaque predicate",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Reverse Engineering Stack Exchange / Code Obfuscation",
+      "real_usage_example": "How to design opaque predicates?",
+      "source_url": "https://reverseengineering.stackexchange.com/questions/2340/how-to-design-opaque-predicates"
+    },
+    {
+      "id": "cybersecurity_025",
+      "domain": "cybersecurity",
+      "term": "confused deputy",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Information Security Stack Exchange / Authorization",
+      "real_usage_example": "* You could use capabilities, they naturally avoid confused deputy attacks, but they have their own share of issues as well.",
+      "source_url": "https://security.stackexchange.com/questions/43856/android-how-do-i-prevent-confused-deputy-attacks"
+    },
+    {
+      "id": "cybersecurity_026",
+      "domain": "cybersecurity",
+      "term": "evil maid",
+      "linguistic_construction": "Code Word",
+      "community_subcommunity": "Information Security Stack Exchange / Physical Access Attacks",
+      "real_usage_example": "I've done what I know to protect my work laptop from an evil maid attack.",
+      "source_url": "https://www.reddit.com/r/linuxquestions/comments/ht2jma/how_can_grub_be_protected_from_evil_maid_attacks/"
+    },
+    {
+      "id": "cybersecurity_027",
+      "domain": "cybersecurity",
+      "term": "honeytoken",
+      "linguistic_construction": "Blending",
+      "community_subcommunity": "Information Security Stack Exchange / Deception Technology",
+      "real_usage_example": "Is it possible to create a honeytoken as an image file?",
+      "source_url": "https://security.stackexchange.com/questions/241861/is-it-possible-to-create-a-honeytoken-as-an-image-file"
+    },
+    {
+      "id": "cybersecurity_028",
+      "domain": "cybersecurity",
+      "term": "TOCTOU",
+      "linguistic_construction": "Acronym",
+      "community_subcommunity": "Information Security Stack Exchange / Filesystem Races",
+      "real_usage_example": "Not all uses of `access(2)` lead to TOCTOU vulnerabilities. Also see AOSP",
+      "source_url": "https://security.stackexchange.com/questions/211631/does-a-single-fopen-introduce-toctou-vulnerability"
+    },
+    {
+      "id": "cybersecurity_029",
+      "domain": "cybersecurity",
+      "term": "public key pinning",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Information Security Stack Exchange / TLS Validation",
+      "real_usage_example": "If you say “public key pinning,” I don't expect anybody will think you mean TOFU.",
+      "source_url": "https://security.stackexchange.com/questions/258487/prevent-server-mitm-attack"
+    },
+    {
+      "id": "cybersecurity_030",
+      "domain": "cybersecurity",
+      "term": "MITM",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Information Security Stack Exchange / Network Interception",
+      "real_usage_example": "Can MitM attack be avoided without using a 3rd party?",
+      "source_url": "https://security.stackexchange.com/questions/153812/can-mitm-attack-be-avoided-without-using-a-3rd-party"
+    },
+    {
+      "id": "cybersecurity_031",
+      "domain": "cybersecurity",
+      "term": "Secret Zero",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Information Security Stack Exchange / Kubernetes Secrets",
+      "real_usage_example": "How Vault agent solves Secret Zero challenge in Kubernetes?",
+      "source_url": "https://security.stackexchange.com/questions/259185/how-vault-agent-solves-secret-zero-challenge-in-kubernetes"
+    },
+    {
+      "id": "cybersecurity_032",
+      "domain": "cybersecurity",
+      "term": "ret2libc",
+      "linguistic_construction": "Abbreviation",
+      "community_subcommunity": "Hack The Box / Binary Exploitation",
+      "real_usage_example": "Even if the NX bit is not set it’s probably easier to use ret2libc in these cases.",
+      "source_url": "https://forum.hackthebox.com/t/ret2libc/1178"
+    },
+    {
+      "id": "cybersecurity_033",
+      "domain": "cybersecurity",
+      "term": "Pass the Ticket",
+      "linguistic_construction": "Multiword Expression",
+      "community_subcommunity": "Hack The Box / Kerberos Attacks",
+      "real_usage_example": "Pass the Ticket Linux - last question - Academy",
+      "source_url": "https://forum.hackthebox.com/t/pass-the-ticket-linux-last-question/309709"
+    },
+    {
+      "id": "cybersecurity_034",
+      "domain": "cybersecurity",
+      "term": "heap feng shui",
+      "linguistic_construction": "Borrowing",
+      "community_subcommunity": "CTF / Heap Exploitation",
+      "real_usage_example": "Tags: heap-overflow heap pwn heap-feng-shui",
+      "source_url": "https://ctftime.org/writeup/5221"
+    },
+    {
+      "id": "cybersecurity_035",
+      "domain": "cybersecurity",
+      "term": "libc leak",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "CTF / Address Disclosure",
+      "real_usage_example": "We can leak libc by using the format string %5$p, which will print the 5th argument as a pointer.",
+      "source_url": "https://ctftime.org/writeup/18794"
+    },
+    {
+      "id": "cybersecurity_036",
+      "domain": "cybersecurity",
+      "term": "GOT overwrite",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "CTF / ELF Exploitation",
+      "real_usage_example": "Tags: got format-string pwn got-overwrite",
+      "source_url": "https://ctftime.org/writeup/26114"
+    },
+    {
+      "id": "cybersecurity_037",
+      "domain": "cybersecurity",
+      "term": "backward consolidation",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Exploit Development / Heap Exploitation",
+      "real_usage_example": "We need just on consolidation (one unlink) to write to GOT, so we will adjust our exploit to use the backward consolidation.",
+      "source_url": "https://n1ght-w0lf.github.io/binary%20exploitation/heap-three/"
+    },
+    {
+      "id": "cybersecurity_038",
+      "domain": "cybersecurity",
+      "term": "stack pivot",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "CTF / Return-Oriented Programming",
+      "real_usage_example": "The task description betrays the nature of this challenge; we're going to stack pivot by corrupting `rbp`.",
+      "source_url": "https://ctftime.org/writeup/30865"
+    },
+    {
+      "id": "cybersecurity_039",
+      "domain": "cybersecurity",
+      "term": "pop sled",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "CTF / ROP Gadget Chaining",
+      "real_usage_example": "Format-string exploit to overwrite the GOT with a pop sled that moves the stack pointer to a ROP chain down stack (buf).",
+      "source_url": "https://ctftime.org/writeup/30724"
+    },
+    {
+      "id": "cybersecurity_040",
+      "domain": "cybersecurity",
+      "term": "SROP",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "CTF / Signal-Frame Exploitation",
+      "real_usage_example": "Solution: Use a stack pivot to ROP from 'motivational_letter'. From there use a SROP to set registers and call exeve(/binsh).",
+      "source_url": "https://ctftime.org/writeup/37000"
+    },
+    {
+      "id": "cybersecurity_041",
+      "domain": "cybersecurity",
+      "term": "ret2dlresolve",
+      "linguistic_construction": "Abbreviation",
+      "community_subcommunity": "Exploit Development / Dynamic Linker Abuse",
+      "real_usage_example": "Based on what you have learned so far, write an exploit using ret2dlresolve and launch a shell.",
+      "source_url": "https://r1ru.github.io/posts/17/"
+    },
+    {
+      "id": "cybersecurity_042",
+      "domain": "cybersecurity",
+      "term": "tcache poisoning",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "CTF / Heap Exploitation",
+      "real_usage_example": "This example showcases tcache poisoning by forcing malloc to return an arbitrary chunk after the corruption of a tcache_entry.",
+      "source_url": "https://hackmd.io/@5Mo2wp7RQdCOYcqKeHl2mw/ByTHN47jf"
+    },
+    {
+      "id": "cybersecurity_043",
+      "domain": "cybersecurity",
+      "term": "ret2plt",
+      "linguistic_construction": "Abbreviation",
+      "community_subcommunity": "Hack The Box / Return-Oriented Programming",
+      "real_usage_example": "> (ASLR bypass Ascii armor bypass + ret2plt)",
+      "source_url": "https://forum.hackthebox.com/t/buffer-overflow-simple-rop-technique/1139"
+    },
+    {
+      "id": "cybersecurity_044",
+      "domain": "cybersecurity",
+      "term": "NOP sled",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Hack The Box / Stack Exploitation",
+      "real_usage_example": "provide an address on the stack which points to a memory address that points to the NOPS - 0x4.",
+      "source_url": "https://forum.hackthebox.com/t/academy-stack-based-buffer-overflows-on-linux-x86/4113"
+    },
+    {
+      "id": "cybersecurity_045",
+      "domain": "cybersecurity",
+      "term": "ROP chain",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "CTF / Return-Oriented Programming",
+      "real_usage_example": "Nonetheless, I enjoyed this challenge a lot. Executing a ropchain via format string was very funny and a good learning experience.",
+      "source_url": "https://ctftime.org/writeup/26750"
+    },
+    {
+      "id": "cybersecurity_046",
+      "domain": "cybersecurity",
+      "term": "House of Force",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "CTF / Heap Exploitation",
+      "real_usage_example": "tl;dr: Use house-of-force to get arbitrary writes. From there you can overwrite GOT entries with one_gadgets or overwrite free with the win function.",
+      "source_url": "https://ctftime.org/writeup/37988"
+    },
+    {
+      "id": "cybersecurity_047",
+      "domain": "cybersecurity",
+      "term": "one gadget",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "CTF / libc Exploitation",
+      "real_usage_example": "1) What is my __strategic goal__? (Win function? One Gadget? Shellcode? syscalls? Libc goodies?)",
+      "source_url": "https://ctftime.org/writeup/33638"
+    },
+    {
+      "id": "cybersecurity_048",
+      "domain": "cybersecurity",
+      "term": "living-off-the-land",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Threat Intelligence / State-Sponsored Intrusions",
+      "real_usage_example": "Because this activity relies on valid accounts and living-off-the-land binaries (LOLBins), detecting and mitigating this attack could be challenging.",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques/"
+    },
+    {
+      "id": "cybersecurity_049",
+      "domain": "cybersecurity",
+      "term": "DLL side-loading",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Threat Research / Windows Execution",
+      "real_usage_example": "The three most common techniques we have observed are DLL side-loading, DLL search order hijacking and phantom DLL loading.",
+      "source_url": "https://unit42.paloaltonetworks.com/dll-hijacking-techniques/"
+    },
+    {
+      "id": "cybersecurity_050",
+      "domain": "cybersecurity",
+      "term": "LOLBAS",
+      "linguistic_construction": "Acronym",
+      "community_subcommunity": "Threat Research / Trusted Binary Abuse",
+      "real_usage_example": "DPAPI decryption via LOLBAS binaries",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/2025/03/06/malvertising-campaign-leads-to-info-stealers-hosted-on-github/"
+    },
+    {
+      "id": "cybersecurity_051",
+      "domain": "cybersecurity",
+      "term": "fileless malware",
+      "linguistic_construction": "Affixation",
+      "community_subcommunity": "Endpoint Security / Memory-Resident Threats",
+      "real_usage_example": "AMSI can be a powerful weapon to fight fileless malware.",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/2018/09/27/out-of-sight-but-not-invisible-defeating-fileless-malware-with-behavior-monitoring-amsi-and-next-gen-av/"
+    },
+    {
+      "id": "cybersecurity_052",
+      "domain": "cybersecurity",
+      "term": "web cache deception",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Web Security Research / Cache Attacks",
+      "real_usage_example": "The easiest way to protect against web cache deception is to mark dynamically generated responses with Cache-Control.",
+      "source_url": "https://portswigger.net/research/gotta-cache-em-all"
+    },
+    {
+      "id": "cybersecurity_053",
+      "domain": "cybersecurity",
+      "term": "single-packet attack",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Web Security Research / Race Conditions",
+      "real_usage_example": "The community has had a lot of success finding race conditions with the single-packet attack.",
+      "source_url": "https://portswigger.net/research/the-single-packet-attack-making-remote-race-conditions-local"
+    },
+    {
+      "id": "cybersecurity_054",
+      "domain": "cybersecurity",
+      "term": "server-side prototype pollution",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Web Security Research / JavaScript Backends",
+      "real_usage_example": "Server-side prototype pollution is hard to detect black-box without causing a DoS.",
+      "source_url": "https://portswigger.net/research/server-side-prototype-pollution"
+    },
+    {
+      "id": "cybersecurity_055",
+      "domain": "cybersecurity",
+      "term": "cache key confusion",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Web Security Research / Cache Keying",
+      "real_usage_example": "Next, I'll present Cache Key Confusion, and show how to exploit URL parsing inconsistencies in major platforms, including Microsoft Azure Cloud.",
+      "source_url": "https://portswigger.net/research/a-hacking-hat-trick-previewing-three-portswigger-research-publications-coming-to-def-con-amp-black-hat-usa"
+    },
+    {
+      "id": "cybersecurity_056",
+      "domain": "cybersecurity",
+      "term": "HTTP desync",
+      "linguistic_construction": "Clipping",
+      "community_subcommunity": "Web Security Research / Request Smuggling",
+      "real_usage_example": "HTTP Desync Attacks: Request Smuggling Reborn",
+      "source_url": "https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn"
+    },
+    {
+      "id": "cybersecurity_057",
+      "domain": "cybersecurity",
+      "term": "reflective loading",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Elastic Security / In-Memory Execution",
+      "real_usage_example": "On Windows, the infection chain relies on PowerShell, a custom in-memory loader known as PhantomPull, and reflective loading techniques.",
+      "source_url": "https://www.elastic.co/security-labs/phantom-in-the-vault"
+    },
+    {
+      "id": "cybersecurity_058",
+      "domain": "cybersecurity",
+      "term": "ClickFix",
+      "linguistic_construction": "Blending",
+      "community_subcommunity": "Elastic Security / Social Engineering",
+      "real_usage_example": "A ClickFix Campaign's Journey to ARECHCLIENT2",
+      "source_url": "https://www.elastic.co/security-labs/a-wretch-client"
+    },
+    {
+      "id": "cybersecurity_059",
+      "domain": "cybersecurity",
+      "term": "registry hive dumps",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Incident Response / Windows Credential Theft",
+      "real_usage_example": "Credential dumping via Registry hive dumps",
+      "source_url": "https://www.huntress.com/blog/credential-theft-expanding-your-reach"
+    },
+    {
+      "id": "cybersecurity_060",
+      "domain": "cybersecurity",
+      "term": "hands-on-keyboard",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Threat Intelligence / Interactive Intrusions",
+      "real_usage_example": "However, Flax Typhoon primarily relies on living-off-the-land techniques and hands-on-keyboard activity.",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/2023/08/24/flax-typhoon-using-legitimate-software-to-quietly-access-taiwanese-organizations/"
+    },
+    {
+      "id": "cybersecurity_061",
+      "domain": "cybersecurity",
+      "term": "process hollowing",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Threat Research / Process Injection",
+      "real_usage_example": "Trickbot implemented process hollowing by first using VirtualProtectEx on the process entrypoint, and then writing the hook stub using WriteProcessMemory.",
+      "source_url": "https://unit42.paloaltonetworks.com/banking-trojan-techniques/"
+    },
+    {
+      "id": "cybersecurity_062",
+      "domain": "cybersecurity",
+      "term": "BYOVD",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Threat Research / Vulnerable Driver Abuse",
+      "real_usage_example": "Thus, using this side noted vulnerability virtually means you can take any BYOVD to an Elevation of Privileges.",
+      "source_url": "https://www.sentinelone.com/labs/cve-2021-21551-hundreds-of-millions-of-dell-computers-at-risk-due-to-multiple-bios-driver-privilege-escalation-flaws/"
+    },
+    {
+      "id": "cybersecurity_063",
+      "domain": "cybersecurity",
+      "term": "double extortion",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "ENISA / Ransomware Threat Landscape",
+      "real_usage_example": "After a ransomware operator extorts the affected organisation (double extortion – to decrypt the data and to return stolen data), the ransomware",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/Health%20Threat%20Landscape.pdf"
+    },
+    {
+      "id": "cybersecurity_064",
+      "domain": "cybersecurity",
+      "term": "password spraying",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "NCSC / Brute-Force Defense",
+      "real_usage_example": "The NCSC has observed an increase in activity as part of malicious email and password spraying campaigns against a limited number of UK organisations.",
+      "source_url": "https://www.ncsc.gov.uk/news/microsoft-update-brute-force-password-spraying"
+    },
+    {
+      "id": "cybersecurity_065",
+      "domain": "cybersecurity",
+      "term": "Initial Access Broker",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "ENISA / Cybercrime Ecosystem",
+      "real_usage_example": "Bumblebee, Lactrodectus, Qakbot, Hijackloader, DanaBot, Trickbot, and Warmcookie—commonly used by Initial Access Brokers (IAB) to breach victim systems.",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/2026-01/ENISA%20Threat%20Landscape%202025_v1.2.pdf"
+    },
+    {
+      "id": "cybersecurity_066",
+      "domain": "cybersecurity",
+      "term": "MFA bombing",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "NCSC / Cloud Initial Access",
+      "real_usage_example": "Just had our third MFA bombing incident this month.",
+      "source_url": "https://www.reddit.com/r/it/comments/1pmohm0/mfa_fatigue_attacks_are_getting_out_of_control/"
+    },
+    {
+      "id": "cybersecurity_067",
+      "domain": "cybersecurity",
+      "term": "multi-extortion",
+      "linguistic_construction": "Affixation",
+      "community_subcommunity": "ENISA / Public Administration Threats",
+      "real_usage_example": "Multi-extortion campaigns might amplify service outages—tax portals, e-ID systems and court scheduling—undermining confidence in digital government.",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/2026-01/ENISA%20Public%20Administration%20TL%202024%20-%20v1.2.pdf"
+    },
+    {
+      "id": "cybersecurity_068",
+      "domain": "cybersecurity",
+      "term": "Mark of the Web (MotW)",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "ENISA / Windows File Provenance",
+      "real_usage_example": "The macros are blocked based on a Mark of the Web (MOTW) attribute which flags files that were downloaded from the web.",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Threat%20Landscape%202023.pdf"
+    },
+    {
+      "id": "cybersecurity_069",
+      "domain": "cybersecurity",
+      "term": "moving-target defense",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "NIST / Adaptive Network Defense",
+      "real_usage_example": "Moving-target defense has been hypothesized as a potential game changer in cyber defense, including that for computer networks.",
+      "source_url": "https://www.nist.gov/publications/simulation-based-approaches-studying-effectiveness-moving-target-network-defense"
+    },
+    {
+      "id": "cybersecurity_070",
+      "domain": "cybersecurity",
+      "term": "Blast-RADIUS",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "CERT-EU / Authentication-Protocol Attacks",
+      "real_usage_example": "Dubbed the Blast-RADIUS attack, this vulnerability leverages an MD5 collision attack to forge authentication responses, potentially granting unauthorised access to network resources.",
+      "source_url": "https://cert.europa.eu/publications/threat-intelligence/cb24-08/"
+    },
+    {
+      "id": "cybersecurity_071",
+      "domain": "cybersecurity",
+      "term": "watering hole",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "CERT-EU / Strategic Web Compromise",
+      "real_usage_example": "In 2012, a watering hole campaign affected the website of US-based turbine manufacturer, Capstone Turbine, and was attributed to a",
+      "source_url": "https://cert.europa.eu/publications/threat-intelligence/threat-memo-190425-1/pdf"
+    },
+    {
+      "id": "cybersecurity_072",
+      "domain": "cybersecurity",
+      "term": "Fast Flux",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "NCSC / Malicious Infrastructure",
+      "real_usage_example": "Attackers can quickly change or hide these indicators using techniques like Fast Flux, cloud-based infrastructure, or ‘living off the land’ ...",
+      "source_url": "https://www.ncsc.gov.uk/blog-post/strengthening-national-cyber-resilience-through-observability-threat-hunting"
+    },
+    {
+      "id": "cybersecurity_073",
+      "domain": "cybersecurity",
+      "term": "attack graph",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "NIST / Network Risk Modeling",
+      "real_usage_example": "We propagate attack likelihoods through the attack graph, yielding a novel way to measure enterprise security risk.",
+      "source_url": "https://www.nist.gov/publications/security-risk-analysis-enterprise-networks-using-probabilistic-attack-graphs"
+    },
+    {
+      "id": "cybersecurity_074",
+      "domain": "cybersecurity",
+      "term": "supply-chain attack",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Hacker News / Dependency Security",
+      "real_usage_example": "The supply chain attack always existed.",
+      "source_url": "https://news.ycombinator.com/item?id=45836466"
+    },
+    {
+      "id": "gaming_001",
+      "domain": "gaming",
+      "term": "freeze the wave",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "League of Legends / Top-Lane Wave Management",
+      "real_usage_example": "Everyone always says \"freeze the wave\" over and over again but even in all the wave management videos I've watched no one actually tells you HOW to freeze the wave.",
+      "source_url": "https://www.reddit.com/r/summonerschool/comments/dpklzk/how_do_you_freeze_a_wave/"
+    },
+    {
+      "id": "gaming_002",
+      "domain": "gaming",
+      "term": "stacking camps",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Dota 2 / Jungle Economy",
+      "real_usage_example": "2. Stacking camps lets you increase the rate that you'll gain XP/Gold. It's great to do if you're passing a camp around xx:50. Additionally in the case of Axe he will always benefit from more creeps hitting him thanks to his counter helix.",
+      "source_url": "https://www.reddit.com/r/learndota2/comments/2011yz/creep_stacking_is_an_important_skill_learn_how_to/"
+    },
+    {
+      "id": "gaming_003",
+      "domain": "gaming",
+      "term": "counter strafe",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "VALORANT / Movement Accuracy",
+      "real_usage_example": "I personally still counter strafe, because I like using my counter strafe to time when I stop and shoot.",
+      "source_url": "https://www.reddit.com/r/VALORANT/comments/1f50xcd/is_counter_strafing_useful/"
+    },
+    {
+      "id": "gaming_004",
+      "domain": "gaming",
+      "term": "panic rolling",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Elden Ring / Dodge Timing",
+      "real_usage_example": "sounds good - because that is NOT panic rolling :D",
+      "source_url": "https://www.reddit.com/r/Eldenring/comments/w70pvk/panic_rolling/"
+    },
+    {
+      "id": "gaming_005",
+      "domain": "gaming",
+      "term": "fuzzy guard",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Fighting Game Community / Defensive Option Selects",
+      "real_usage_example": "If you can do a fuzzy guard, you'll essentially beat both throw and mid options.",
+      "source_url": "https://www.reddit.com/r/Fighters/comments/1n51h1c/i_dont_understand_the_term_fuzzy/"
+    },
+    {
+      "id": "gaming_006",
+      "domain": "gaming",
+      "term": "KWTD",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Destiny 2 / Raid LFG",
+      "real_usage_example": "KWTD—if we wipe, you get kicked. P.S. I'm on ad clear.",
+      "source_url": "https://www.reddit.com/r/Destiny_2/comments/1uqtp1c/what_do_i_need_to_start_raiding/"
+    },
+    {
+      "id": "gaming_007",
+      "domain": "gaming",
+      "term": "parsing",
+      "linguistic_construction": "Functional Shift",
+      "community_subcommunity": "World of Warcraft / Combat Logs",
+      "real_usage_example": "We one-shot all the 25-player content, and I was parsing blue or purple with zero heroic or raid drops.",
+      "source_url": "https://www.reddit.com/r/classicwow/comments/1rfao8u/why_do_people_expect_you_to_grind_heroics_etc_to/"
+    },
+    {
+      "id": "gaming_008",
+      "domain": "gaming",
+      "term": "quasi connectivity",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Minecraft Java / Technical Redstone",
+      "real_usage_example": "Why is quasi connectivity still a thing?",
+      "source_url": "https://www.reddit.com/r/technicalminecraft/comments/1mgy55y/why_is_quasi_connectivity_still_a_thing/"
+    },
+    {
+      "id": "gaming_009",
+      "domain": "gaming",
+      "term": "RNG Manipulation",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Speedrunning / Pokémon Routing",
+      "real_usage_example": "If you want to learn how the basic RNG manipulation works, watch this short video:",
+      "source_url": "https://www.reddit.com/r/speedrun/comments/4yh83x/pok%C3%A9mon_gen_1_consistent_rng_manipulation_in_rta/"
+    },
+    {
+      "id": "gaming_010",
+      "domain": "gaming",
+      "term": "cheater recall",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "League of Legends / Wave Management",
+      "real_usage_example": "I've been going between top and mid, and I find cheater recall really good for wave management.",
+      "source_url": "https://www.reddit.com/r/summonerschool/comments/1792pfn/whats_the_equivalent_of_cheaters_recall_in_midlane/"
+    },
+    {
+      "id": "gaming_011",
+      "domain": "gaming",
+      "term": "Bud powering",
+      "linguistic_construction": "Acronym",
+      "community_subcommunity": "Minecraft Java / Piston Update Mechanics",
+      "real_usage_example": "Bro replace the block that is bud powering the piston with a slab.",
+      "source_url": "https://www.reddit.com/r/technicalminecraft/comments/n6mva1/can_someone_explain_why_nonsolid_blocks_conduct_a/"
+    },
+    {
+      "id": "gaming_012",
+      "domain": "gaming",
+      "term": "gold split",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Speedrunning / LiveSplit Timing",
+      "real_usage_example": "Should you keep a gold split even if you reset the run later?",
+      "source_url": "https://www.reddit.com/r/speedrun/comments/6lyo90/what_is_a_gold_split/"
+    },
+    {
+      "id": "gaming_013",
+      "domain": "gaming",
+      "term": "jiggle peek",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Counter-Strike / Angle Clearing",
+      "real_usage_example": "Let's say your jiggle peek normally leaves you vulnerable for around 180ms.",
+      "source_url": "https://www.reddit.com/r/GlobalOffensive/comments/176bt0x/dont_jiggle_peek_in_cs2/"
+    },
+    {
+      "id": "gaming_014",
+      "domain": "gaming",
+      "term": "uptime strat",
+      "linguistic_construction": "Clipping",
+      "community_subcommunity": "Final Fantasy XIV / Savage Raiding",
+      "real_usage_example": "M10S Flame Floater Uptime strat.",
+      "source_url": "https://www.reddit.com/r/ffxivdiscussion/comments/1q8z2yf/m10s_flame_floater_uptime_strat/"
+    },
+    {
+      "id": "gaming_015",
+      "domain": "gaming",
+      "term": "parse culture",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "World of Warcraft / Raid Performance",
+      "real_usage_example": "Trying to destroy parse culture by adding more external DPS buffs like PI is like trying to put out a fire by dropping huge quantities of napalm on it.",
+      "source_url": "https://www.reddit.com/r/wow/comments/llb0a3/power_infusion_shadow_priests_and_its_massive/"
+    },
+    {
+      "id": "gaming_016",
+      "domain": "gaming",
+      "term": "armor strip",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Warframe / High-Level Builds",
+      "real_usage_example": "Personally, I have no trouble dealing above 2 million corrosive damage in a single hit, so I can oneshot these enemies without needing to use status effects or armor strip.",
+      "source_url": "https://www.reddit.com/r/Warframe/comments/1811psw/understanding_armor_stripping/"
+    },
+    {
+      "id": "gaming_017",
+      "domain": "gaming",
+      "term": "Rat Dota",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Dota 2 / Split-Push Strategy",
+      "real_usage_example": "Rat Dota was how T1 did so well at the AniMajor and TI.",
+      "source_url": "https://www.reddit.com/r/DotA2/comments/t1zk4d/i_hate_seeing_different_playstyles_being_phased/"
+    },
+    {
+      "id": "gaming_018",
+      "domain": "gaming",
+      "term": "one tapped",
+      "linguistic_construction": "Functional Shift",
+      "community_subcommunity": "VALORANT / Aim Duels",
+      "real_usage_example": "Every time I hold an angle I always get one tapped they just swing me and tap my head.",
+      "source_url": "https://www.reddit.com/r/VALORANT/comments/11cy2f9/why_do_i_keep_getting_one_tapped/"
+    },
+    {
+      "id": "gaming_019",
+      "domain": "gaming",
+      "term": "vigor check",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Elden Ring / Build Survivability",
+      "real_usage_example": "What boss in Elden Ring do you consider the biggest vigor check?",
+      "source_url": "https://www.reddit.com/r/Eldenring/comments/v14bfn/what_boss_in_elden_ring_do_you_consider_to_be_the/"
+    },
+    {
+      "id": "gaming_020",
+      "domain": "gaming",
+      "term": "meaty",
+      "linguistic_construction": "Semantic Shift",
+      "community_subcommunity": "Fighting Game Community / Wake-Up Pressure",
+      "real_usage_example": "If they're trying to meaty, you can EX Lariat.",
+      "source_url": "https://www.reddit.com/r/Fighters/comments/14ss4l0/zangief_wake_up_game_in_sf6_feels_way_different/"
+    },
+    {
+      "id": "gaming_021",
+      "domain": "gaming",
+      "term": "snapshotting",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "World of Warcraft / Feral Druid Optimization",
+      "real_usage_example": "The reason I'm obsessed with snapshotting is that it's my favorite style of play.",
+      "source_url": "https://us.forums.blizzard.com/en/wow/t/can-we-go-back-feral/503775"
+    },
+    {
+      "id": "gaming_022",
+      "domain": "gaming",
+      "term": "pandemic window",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "World of Warcraft / Damage-over-Time Refresh",
+      "real_usage_example": "You can set these times in a weakaura to highlight when the dot reaches the pandemic window and below also.",
+      "source_url": "https://us.forums.blizzard.com/en/wow/t/what-is-pandemic-for-affliction-warlocks-does-it-really-exist/2098940"
+    },
+    {
+      "id": "gaming_023",
+      "domain": "gaming",
+      "term": "twinking",
+      "linguistic_construction": "Affixation",
+      "community_subcommunity": "World of Warcraft / Low-Level PvP",
+      "real_usage_example": "Back in my day, twinking had communities for each bracket.",
+      "source_url": "https://us.forums.blizzard.com/en/wow/t/twinking-what-is-it-what-does-it-do-why-do-players-do-it/1540089"
+    },
+    {
+      "id": "gaming_024",
+      "domain": "gaming",
+      "term": "wall-to-wall pull",
+      "linguistic_construction": "Multiword Expression",
+      "community_subcommunity": "Final Fantasy XIV / Dungeon Tanking",
+      "real_usage_example": "Is it possible to heal a wall to wall pull in stone vigil between 2nd and 3rd boss?",
+      "source_url": "https://forum.square-enix.com/ffxiv/threads/495666"
+    },
+    {
+      "id": "gaming_025",
+      "domain": "gaming",
+      "term": "GCD clipping",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Final Fantasy XIV / Rotation Optimization",
+      "real_usage_example": "the reason that GCD clipping is even an issue is because when your GCD cup fills to 1 liter, it cannot receive more juice.",
+      "source_url": "https://forum.square-enix.com/ffxiv/threads/510013"
+    },
+    {
+      "id": "gaming_026",
+      "domain": "gaming",
+      "term": "weaving",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Final Fantasy XIV / Off-Global Abilities",
+      "real_usage_example": "It's the inevitable result of how GCD/oGCD weaving works, it's just exacerbated massively by the built-in 100ms delay and how the servers are placed.",
+      "source_url": "https://forum.square-enix.com/ffxiv/threads/398690"
+    },
+    {
+      "id": "gaming_027",
+      "domain": "gaming",
+      "term": "shield gating",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Warframe / Survivability Builds",
+      "real_usage_example": "* L290: * Shield Gating",
+      "source_url": "https://forums.warframe.com/topic/1454203-shield-gating/"
+    },
+    {
+      "id": "gaming_028",
+      "domain": "gaming",
+      "term": "red crit",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Warframe / Critical-Hit Scaling",
+      "real_usage_example": "Trust me the damage can be much higher than normal red crits lol.",
+      "source_url": "https://forums.warframe.com/topic/1107115-red-crits/"
+    },
+    {
+      "id": "gaming_029",
+      "domain": "gaming",
+      "term": "stat stick",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Warframe / Ability-Scaling Weapons",
+      "real_usage_example": "Sentinel weapons can also be used as stat sticks because their weapons can be modded with set mods.",
+      "source_url": "https://forums.warframe.com/topic/1171979-what-is-stat-stick-and-yes-i-tried-googling-it/"
+    },
+    {
+      "id": "gaming_030",
+      "domain": "gaming",
+      "term": "raid sherpa",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Destiny 2 / Guided Raiding",
+      "real_usage_example": "Over on discord, I can help organise a raid sherpa for you.",
+      "source_url": "https://www.bungie.net/en/Forums/Post/259558923"
+    },
+    {
+      "id": "gaming_031",
+      "domain": "gaming",
+      "term": "blueberries",
+      "linguistic_construction": "Semantic Shift",
+      "community_subcommunity": "Destiny 2 / Matchmade Teammates",
+      "real_usage_example": "We got the blueberries their first Vow clear—and their first-ever raid clear.",
+      "source_url": "https://www.bungie.net/en/Forums/Post/262318533"
+    },
+    {
+      "id": "gaming_032",
+      "domain": "gaming",
+      "term": "lust on pull",
+      "linguistic_construction": "Multiword Expression",
+      "community_subcommunity": "World of Warcraft / Raid Cooldown Timing",
+      "real_usage_example": "Lust on Pull → If your players don’t know what it means to hold cooldowns.",
+      "source_url": "https://us.forums.blizzard.com/en/wow/t/question-about-lust-and-heroic-smolderon/1722819"
+    },
+    {
+      "id": "gaming_033",
+      "domain": "gaming",
+      "term": "well skating",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Destiny 2 / Movement Tech",
+      "real_usage_example": "Dear Bungie, Please remove shatter and well skating (swordflying), the toxic anathema to matchmade content, as soon as possible.",
+      "source_url": "https://www.bungie.net/en/Forums/Post/263189159"
+    },
+    {
+      "id": "gaming_034",
+      "domain": "gaming",
+      "term": "god roll",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Warframe / Riven Trading",
+      "real_usage_example": "You can have huge crit stats on the Seer Pistol, but that doesn't make it a god roll.",
+      "source_url": "https://forums.warframe.com/topic/886175-what-is-a-god-roll-riven-mod/"
+    },
+    {
+      "id": "gaming_035",
+      "domain": "gaming",
+      "term": "Fashionframe",
+      "linguistic_construction": "Blending",
+      "community_subcommunity": "Warframe / Cosmetic Endgame",
+      "real_usage_example": "Do you ever see someone else's Warframe and say \"that's awesome, I want that!\" If so, you'd love Fashionframe.",
+      "source_url": "https://forums.warframe.com/topic/1085360-fashionframe-website/"
+    },
+    {
+      "id": "gaming_036",
+      "domain": "gaming",
+      "term": "PF strat",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Final Fantasy XIV / Party Finder Raiding",
+      "real_usage_example": "Everyone is expected to just know a standard universal PF strat that often differs from online guides.",
+      "source_url": "https://forum.square-enix.com/ffxiv/threads/455559-Tales-from-Duty-Finder-Some-make-you-laugh-some-make-you-cry.-Let-s-vent.-2.0/page53"
+    },
+    {
+      "id": "gaming_037",
+      "domain": "gaming",
+      "term": "dunk the orb",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Destiny 2 / Objective Mechanics",
+      "real_usage_example": "DUNK THE ORB! : r/destiny2",
+      "source_url": "https://www.bungie.net/en/Forums/Post/255085246"
+    },
+    {
+      "id": "gaming_038",
+      "domain": "gaming",
+      "term": "kite phase",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "World of Warcraft / Encounter Strategy",
+      "real_usage_example": "Phase 3: Kite Phase (Pillar Phase)",
+      "source_url": "https://us.forums.blizzard.com/en/wow/t/teron-gorefiend-i-am-bugged/2249057"
+    },
+    {
+      "id": "gaming_039",
+      "domain": "gaming",
+      "term": "sandbagging",
+      "linguistic_construction": "Semantic Shift",
+      "community_subcommunity": "World of Warcraft / Cooldown Recovery",
+      "real_usage_example": "One important habit to get into is sandbagging the end of each wave so you can get chastise back up",
+      "source_url": "https://us.forums.blizzard.com/en/wow/t/holy-priest-mage-tower-help/1821920"
+    },
+    {
+      "id": "gaming_040",
+      "domain": "gaming",
+      "term": "bunny hopping",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Left 4 Dead 2 / Movement Tech",
+      "real_usage_example": "Why would you be kicked out when you are bunny hopping? It was going great in Tank Mutation.",
+      "source_url": "https://steamcommunity.com/app/550/discussions/0/558755529866420422/"
+    },
+    {
+      "id": "gaming_041",
+      "domain": "gaming",
+      "term": "animation canceling",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "New World / Combat Optimization",
+      "real_usage_example": "Is fight system based on animation canceling?",
+      "source_url": "https://steamcommunity.com/app/1063730/discussions/0/3115908865099344580/"
+    },
+    {
+      "id": "gaming_042",
+      "domain": "gaming",
+      "term": "smurf queue",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Dota 2 / Matchmaking",
+      "real_usage_example": "Upon setting up this (new) account\" you were placed into the smurf queue because using multiple accounts is smurfing.",
+      "source_url": "https://steamcommunity.com/app/570/discussions/0/4846526931626854862/?ctp=2"
+    },
+    {
+      "id": "gaming_043",
+      "domain": "gaming",
+      "term": "kiting",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Killing Floor 2 / Enemy Movement",
+      "real_usage_example": "Well, when you mentioned kiting there are 2 that come to mind, so I'll tell you what i know of both.",
+      "source_url": "https://steamcommunity.com/app/232090/discussions/0/1484359403778252793/"
+    },
+    {
+      "id": "gaming_044",
+      "domain": "gaming",
+      "term": "doomstack",
+      "linguistic_construction": "Blending",
+      "community_subcommunity": "Total War: Warhammer II / Army Composition",
+      "real_usage_example": "I usually doomstack with four Slayers, six Ironbreakers, a Thane, and a Master Engineer.",
+      "source_url": "https://steamcommunity.com/app/594570/discussions/0/2949251578288833903/"
+    },
+    {
+      "id": "gaming_045",
+      "domain": "gaming",
+      "term": "i-frames",
+      "linguistic_construction": "Abbreviation",
+      "community_subcommunity": "Dead Cells / Shield Invulnerability",
+      "real_usage_example": "from L60: * Have i-frames activate when the player takes a significant amount of damage (~33%-50% of max HP) in a short time.",
+      "source_url": "https://steamcommunity.com/app/588650/discussions/0/2333276539602640875/"
+    },
+    {
+      "id": "gaming_046",
+      "domain": "gaming",
+      "term": "spawn camping",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "War Thunder / Match Tactics",
+      "real_usage_example": "People asked for smaller maps; now they have to deal with relentless spawn camping.",
+      "source_url": "https://steamcommunity.com/app/236390/discussions/0/4851030723890802005/"
+    },
+    {
+      "id": "gaming_047",
+      "domain": "gaming",
+      "term": "DPS check",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Monster Hunter Wilds / Encounter Thresholds",
+      "real_usage_example": "> \"Previous games didn't have DPS checks?",
+      "source_url": "https://steamcommunity.com/app/2246340/discussions/0/750542551166125074/?ctp=3"
+    },
+    {
+      "id": "gaming_048",
+      "domain": "gaming",
+      "term": "stutter stepping",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Dota 2 / Attack-Move Timing",
+      "real_usage_example": "It seems like you can stutter step heros in dota like in sc2 ... without loosing any dps.",
+      "source_url": "https://steamcommunity.com/app/570/discussions/0/864975399830525028/"
+    },
+    {
+      "id": "gaming_049",
+      "domain": "gaming",
+      "term": "aggro juggling",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Shadowrun: Hong Kong / Target Control",
+      "real_usage_example": "> Obviously You won't be shot if the enemy can't see You, so clever maneuvering can protect You and allow aggro juggling.",
+      "source_url": "https://steamcommunity.com/app/346940/discussions/0/2993165479002039949/"
+    },
+    {
+      "id": "gaming_050",
+      "domain": "gaming",
+      "term": "trash mobs",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Final Fantasy XIV / Dungeon Mob Packs",
+      "real_usage_example": "I have no problem tanking mobs in dungeons as a non-tank. They're trash mobs. If you were scared of dying don't push ahead.",
+      "source_url": "https://steamcommunity.com/app/39210/discussions/0/3049482036388272179/?ctp=4&l=english"
+    },
+    {
+      "id": "gaming_051",
+      "domain": "gaming",
+      "term": "proc build",
+      "linguistic_construction": "Clipping",
+      "community_subcommunity": "The Slormancer / Trigger-Based Builds",
+      "real_usage_example": "Whirlwind proc build? Im trying to find a build for knight for whirlwind but im not finding anything, anyone know where i can find?",
+      "source_url": "https://steamcommunity.com/app/1104280/discussions/0/3887226156980363297/"
+    },
+    {
+      "id": "gaming_052",
+      "domain": "gaming",
+      "term": "soft pity",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Persona 5: The Phantom X / Gacha Probabilities",
+      "real_usage_example": "I did get a soft pity reward today though while rolling for Joker I got the 5 Star Curse character thats new to this cast.",
+      "source_url": "https://steamcommunity.com/app/3061570/discussions/0/597405278050300338/?ctp=3"
+    },
+    {
+      "id": "gaming_053",
+      "domain": "gaming",
+      "term": "deathball",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Sins of a Solar Empire II / Fleet Strategy",
+      "real_usage_example": "A maximum fleet size cap would change much of the defenses and their capabilities in the game already since there would be no more deathballs.",
+      "source_url": "https://steamcommunity.com/app/1575940/discussions/1/4633737354676288856/"
+    },
+    {
+      "id": "gaming_054",
+      "domain": "gaming",
+      "term": "glass cannon build",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Grim Dawn / Damage-Survivability Tradeoff",
+      "real_usage_example": "So I made a stupid glass cannon build...",
+      "source_url": "https://steamcommunity.com/app/219990/discussions/0/601893430931503052/"
+    },
+    {
+      "id": "gaming_055",
+      "domain": "gaming",
+      "term": "min-maxing",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Elden Ring / Attribute Optimization",
+      "real_usage_example": "Min/Maxing is a skill issue.",
+      "source_url": "https://steamcommunity.com/app/1245620/discussions/0/4299322040764027983/?ctp=2"
+    },
+    {
+      "id": "gaming_056",
+      "domain": "gaming",
+      "term": "cheese strat",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Age of Empires II / Unorthodox Openings",
+      "real_usage_example": "True, but the thing is, when pros do it, it stopped being a cheese strategy, it becomes a very aggressive push.",
+      "source_url": "https://steamcommunity.com/app/813780/discussions/0/3806154368647917081/?ctp=2"
+    },
+    {
+      "id": "gaming_057",
+      "domain": "gaming",
+      "term": "face tanking",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Remnant II / Damage Absorption Builds",
+      "real_usage_example": "Does face tanking a punchy boss, and just exchanging blows like it's some sort of anime is way to fun with 8% life steal.",
+      "source_url": "https://steamcommunity.com/app/1282100/discussions/0/3807282258511919839/"
+    },
+    {
+      "id": "gaming_058",
+      "domain": "gaming",
+      "term": "power creep",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Wuthering Waves / Long-Term Balance",
+      "real_usage_example": "Power Creep in end game content !",
+      "source_url": "https://steamcommunity.com/app/3513350/discussions/0/546746241084929135/?ctp=7"
+    },
+    {
+      "id": "gaming_059",
+      "domain": "gaming",
+      "term": "autosplitter",
+      "linguistic_construction": "Affixation",
+      "community_subcommunity": "LiveSplit / Speedrun Automation",
+      "real_usage_example": "Livesplit says 'there is no autosplitter available for this game' when there should be one available #2337",
+      "source_url": "https://github.com/LiveSplit/LiveSplit/issues/2337"
+    },
+    {
+      "id": "gaming_060",
+      "domain": "gaming",
+      "term": "plando",
+      "linguistic_construction": "Blending",
+      "community_subcommunity": "Archipelago / Randomizer Planning",
+      "real_usage_example": "Plando items is the only existing plando feature that is generically supported by all worlds, but should also be on the options system.",
+      "source_url": "https://github.com/ArchipelagoMW/Archipelago/issues/2364"
+    },
+    {
+      "id": "gaming_061",
+      "domain": "gaming",
+      "term": "async multiworld",
+      "linguistic_construction": "Clipping",
+      "community_subcommunity": "Archipelago / Multi-Game Randomizers",
+      "real_usage_example": "multiserver: Push message service for async multiworld · Issue #3487 · ArchipelagoMW/Archipelago · GitHub",
+      "source_url": "https://github.com/ArchipelagoMW/Archipelago/issues/3487"
+    },
+    {
+      "id": "gaming_062",
+      "domain": "gaming",
+      "term": "in-logic",
+      "linguistic_construction": "Affixation",
+      "community_subcommunity": "Archipelago / Randomizer Reachability",
+      "real_usage_example": "In this case, archipelago would consider the item in-logic, even though it's inaccessible.",
+      "source_url": "https://github.com/ArchipelagoMW/Archipelago/issues/4202"
+    },
+    {
+      "id": "gaming_063",
+      "domain": "gaming",
+      "term": "itempool",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Archipelago / Randomizer Generation",
+      "real_usage_example": "* All items submitted to the multiworld itempool must not be manually placed by the World.",
+      "source_url": "https://github.com/ArchipelagoMW/Archipelago/issues/6334"
+    },
+    {
+      "id": "gaming_064",
+      "domain": "gaming",
+      "term": "griefing",
+      "linguistic_construction": "Affixation",
+      "community_subcommunity": "Arqade / Multiplayer Conduct",
+      "real_usage_example": "I would also say that there is an argument for too many examples being labelled as griefing, such as kill stealing or looting in general.",
+      "source_url": "https://gaming.stackexchange.com/questions/5711/what-is-griefing"
+    },
+    {
+      "id": "gaming_065",
+      "domain": "gaming",
+      "term": "rubber banding",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Arqade / Network Movement",
+      "real_usage_example": "I was playing Counter Strike: Global Offensive today, and someone on my team who wasn't moving said that he was \"rubber banding\".",
+      "source_url": "https://gaming.stackexchange.com/questions/250261/what-is-rubber-banding"
+    },
+    {
+      "id": "gaming_066",
+      "domain": "gaming",
+      "term": "clagging",
+      "linguistic_construction": "Blending",
+      "community_subcommunity": "Arqade / Diablo II Performance",
+      "real_usage_example": "When dueling in diablo 2, I see a lot of paladins talking about \"clagging.\" How is \"clagging\" done in diablo 2?",
+      "source_url": "https://gaming.stackexchange.com/questions/72647/clagging-in-diablo-2"
+    },
+    {
+      "id": "gaming_067",
+      "domain": "gaming",
+      "term": "PUG",
+      "linguistic_construction": "Acronym",
+      "community_subcommunity": "Arqade / Ad-Hoc Groups",
+      "real_usage_example": "Is it poor form to join a PUG for a normal raid if I can only stay for part of it?",
+      "source_url": "https://www.reddit.com/r/wow/comments/1851nd2/what_is_the_etiquette_for_joining_normal_pug/"
+    },
+    {
+      "id": "gaming_068",
+      "domain": "gaming",
+      "term": "kaizo ironmon",
+      "linguistic_construction": "Borrowing",
+      "community_subcommunity": "Arqade / Pokémon Challenge Runs",
+      "real_usage_example": "One of the streamers I watch, Pointcrow, did a Pokémon challenge run a couple months ago called “kaizo ironmon”.",
+      "source_url": "https://gaming.stackexchange.com/questions/410742/what-s-a-kaizo-ironmon-pok%C3%A9mon-challenge"
+    },
+    {
+      "id": "gaming_069",
+      "domain": "gaming",
+      "term": "overextending",
+      "linguistic_construction": "Affixation",
+      "community_subcommunity": "Arqade / MOBA Positioning",
+      "real_usage_example": "When you play a scrim, make it a personal goal not to overextend.",
+      "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=118485045"
+    },
+    {
+      "id": "gaming_070",
+      "domain": "gaming",
+      "term": "wall riding",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Arqade / Shooter Movement",
+      "real_usage_example": "Wall riding like it is in the games is exaggerated, but it works.",
+      "source_url": "https://gaming.stackexchange.com/questions/814/what-is-wall-riding"
+    },
+    {
+      "id": "gaming_071",
+      "domain": "gaming",
+      "term": "smurfing",
+      "linguistic_construction": "Affixation",
+      "community_subcommunity": "Arqade / Matchmaking Abuse",
+      "real_usage_example": "@Doug I started this guy's question because I mentioned smurfing in a different question he asked.",
+      "source_url": "https://gaming.stackexchange.com/questions/5670/what-is-smurfing-in-online-games"
+    },
+    {
+      "id": "gaming_072",
+      "domain": "gaming",
+      "term": "tryhard",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Arqade / Player Identity",
+      "real_usage_example": "Well in your example it would not be the enemy that tryharded, but your team that failed to take your advantage and finish the game.",
+      "source_url": "https://gaming.stackexchange.com/questions/245280/what-does-tryhard-mean-exactly"
+    },
+    {
+      "id": "gaming_073",
+      "domain": "gaming",
+      "term": "corpse hopping",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Arqade / World of Warcraft Travel",
+      "real_usage_example": "Corpse hopping is how we got through Inferno Acts 2–4. Repair cost was the real gatekeeper.",
+      "source_url": "https://www.reddit.com/r/Diablo/comments/ht32kd/vanilla_d3_do_you_remember/"
+    },
+    {
+      "id": "gaming_074",
+      "domain": "gaming",
+      "term": "graveyard zerging",
+      "linguistic_construction": "Borrowing",
+      "community_subcommunity": "Arqade / World of Warcraft PvP",
+      "real_usage_example": "The next time a player is graveyard zerging a boss, it should feel inefficient.",
+      "source_url": "https://gaming.stackexchange.com/questions/72527/what-is-graveyard-zerging-or-death-zerging"
+    },
+    {
+      "id": "gaming_075",
+      "domain": "gaming",
+      "term": "ladder match",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Arqade / Ranked Competition",
+      "real_usage_example": "I've noticed that some games have the option of a ladder match.",
+      "source_url": "https://gaming.stackexchange.com/questions/25538/what-is-a-ladder-match"
+    },
+    {
+      "id": "gaming_076",
+      "domain": "gaming",
+      "term": "setup",
+      "linguistic_construction": "Semantic Shift",
+      "community_subcommunity": "Arqade / Fighting Game Pressure",
+      "real_usage_example": "You need to learn true, auto-timed oki setups instead of trying to freewheel it.",
+      "source_url": "https://www.reddit.com/r/StreetFighter/comments/1tbcr7a/why_do_i_always_feel_im_negative_on_opponents/"
+    },
+    {
+      "id": "gaming_077",
+      "domain": "gaming",
+      "term": "Top Up games",
+      "linguistic_construction": "Multiword Expression",
+      "community_subcommunity": "Arqade / Mobile Monetization",
+      "real_usage_example": "Someone in my Discord mentioned Top Up games as being worse than Diablo Immortal and other gacha games.",
+      "source_url": "https://gaming.stackexchange.com/questions/397858/what-are-top-up-games"
+    },
+    {
+      "id": "gaming_078",
+      "domain": "gaming",
+      "term": "skinner box",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Arqade / Reward-System Design",
+      "real_usage_example": "I realized a Skinner-box reward cycle was how I had been playing Diablo II.",
+      "source_url": "https://gaming.stackexchange.com/questions/385616/what-does-it-mean-for-a-game-to-be-a-skinner-box"
+    },
+    {
+      "id": "gaming_079",
+      "domain": "gaming",
+      "term": "hitscan",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Arqade / Shooter Weapon Models",
+      "real_usage_example": "Some abilities are hitscan, and that significantly impacts how you aim an attack.",
+      "source_url": "https://gaming.stackexchange.com/questions/264412/is-there-a-list-of-hitscan-abilities-weapons-in-overwatch"
+    },
+    {
+      "id": "gaming_080",
+      "domain": "gaming",
+      "term": "ticking area",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Minecraft Bedrock / Chunk Loading",
+      "real_usage_example": "You can use a ticking area to keep them loaded when players are not nearby.",
+      "source_url": "https://wiki.bedrock.dev/commands/intro-to-command-blocks"
+    },
+    {
+      "id": "gaming_081",
+      "domain": "gaming",
+      "term": "reverse aerial rush",
+      "linguistic_construction": "Multiword Expression",
+      "community_subcommunity": "Super Smash Bros. / Aerial Approach Tech",
+      "real_usage_example": "Masahiro Sakurai has directly acknowledged the reverse aerial rush.",
+      "source_url": "https://www.ssbwiki.com/Reverse_aerial_rush"
+    },
+    {
+      "id": "gaming_082",
+      "domain": "gaming",
+      "term": "B-reversing",
+      "linguistic_construction": "Affixation",
+      "community_subcommunity": "Super Smash Bros. / Momentum Reversal",
+      "real_usage_example": "Mario can jump away, then B-reverse a Fireball to close distance while landing behind the projectile.",
+      "source_url": "https://www.ssbwiki.com/B-reversing"
+    },
+    {
+      "id": "gaming_083",
+      "domain": "gaming",
+      "term": "wavedash",
+      "linguistic_construction": "Blending",
+      "community_subcommunity": "Super Smash Bros. Melee / Movement Tech",
+      "real_usage_example": "Dash forward into wavedash back is another common application of this technique.",
+      "source_url": "https://www.ssbwiki.com/Wavedash"
+    },
+    {
+      "id": "gaming_084",
+      "domain": "gaming",
+      "term": "EV-training",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Pokémon / Stat Optimization",
+      "real_usage_example": "Pokémon Sun and Moon introduced Poké Pelago, which allows for passive EV-training of Pokémon currently stored in the PC.",
+      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Effort_values"
+    },
+    {
+      "id": "gaming_085",
+      "domain": "gaming",
+      "term": "soft resetting",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Pokémon / Shiny and IV Hunting",
+      "real_usage_example": "For a while now, I've been soft resetting for a shiny starter.",
+      "source_url": "https://www.reddit.com/r/PokemonBlackandWhite/comments/i3errp/"
+    },
+    {
+      "id": "gaming_086",
+      "domain": "gaming",
+      "term": "double weave",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Final Fantasy XIV / Ninja Optimization",
+      "real_usage_example": "This means that you should not double weave if possible, unless you have very low ping to the point where it will not clip.",
+      "source_url": "https://www.icy-veins.com/ffxiv/how-to-improve-as-ninja"
+    },
+    {
+      "id": "gaming_087",
+      "domain": "gaming",
+      "term": "burst window",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Final Fantasy XIV / Reaper Rotation",
+      "real_usage_example": "Reaper's standard rotation will reach the 2 minutes burst window with 60 Soul and 50 Shroud.",
+      "source_url": "https://www.icy-veins.com/ffxiv/reaper-pve-dps-rotation-openers-abilities"
+    },
+    {
+      "id": "gaming_088",
+      "domain": "gaming",
+      "term": "slidecast window",
+      "linguistic_construction": "Blending",
+      "community_subcommunity": "Final Fantasy XIV / Scholar Movement",
+      "real_usage_example": "One thing that can be helpful for learning your slidecast window is adding an emote to your hotbar.",
+      "source_url": "https://www.thebalanceffxiv.com/jobs/healers/scholar/basic-guide/"
+    },
+    {
+      "id": "gaming_089",
+      "domain": "gaming",
+      "term": "drift",
+      "linguistic_construction": "Semantic Shift",
+      "community_subcommunity": "Final Fantasy XIV / Machinist Cooldowns",
+      "real_usage_example": "For any other openers, you can use it as an example as to how when it is worth drifting Image: Reassemble Icon†static.icy-veins.com Reassemble into buffs.",
+      "source_url": "https://www.icy-veins.com/ffxiv/machinist-advanced"
+    },
+    {
+      "id": "gaming_090",
+      "domain": "gaming",
+      "term": "Envenom chaining",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "World of Warcraft / Assassination Rogue",
+      "real_usage_example": "Envenom Chaining Apex Talent: Implacable Pandemic Energy Pooling Deathstalker's Mark Snapshotting",
+      "source_url": "https://www.icy-veins.com/wow/assassination-rogue-pve-dps-rotation-cooldowns-abilities"
+    },
+    {
+      "id": "gaming_091",
+      "domain": "gaming",
+      "term": "STAB",
+      "linguistic_construction": "Acronym",
+      "community_subcommunity": "Pokémon / Damage Optimization",
+      "real_usage_example": "Should the Terastallized Pokémon change to the Stellar type, the x2 STAB boost will be granted to all of its moves regardless of their type.",
+      "source_url": "https://bulbapedia.bulbagarden.net/wiki/Same-type_attack_bonus"
+    },
+    {
+      "id": "gaming_092",
+      "domain": "gaming",
+      "term": "positionals",
+      "linguistic_construction": "Functional Shift",
+      "community_subcommunity": "Final Fantasy XIV / Samurai Melee Optimization",
+      "real_usage_example": "Executing positionals correctly is an essential part of any melee DPS job!",
+      "source_url": "https://www.thebalanceffxiv.com/jobs/melee/samurai/faq/"
+    },
+    {
+      "id": "gaming_093",
+      "domain": "gaming",
+      "term": "wrong warp",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Speedrunning / Route-Breaking Glitches",
+      "real_usage_example": "How to find a wrong warp?",
+      "source_url": "https://www.speedrun.com/forums/speedrunning/fplpi"
+    },
+    {
+      "id": "gaming_094",
+      "domain": "gaming",
+      "term": "savewarp",
+      "linguistic_construction": "Blending",
+      "community_subcommunity": "Speedrunning / Save-Based Routing",
+      "real_usage_example": "By carefully avoiding checkpoints, you can collect the Gauss Gun and savewarp to the opening screen.",
+      "source_url": "https://www.speedrun.com/forums/speedrunning/zb3g9"
+    },
+    {
+      "id": "gaming_095",
+      "domain": "gaming",
+      "term": "RTA",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Speedrunning / Timing Methods",
+      "real_usage_example": "In this situation I would say RTA is the better option.",
+      "source_url": "https://www.speedrun.com/forums/speedrunning/b5rk1"
+    },
+    {
+      "id": "gaming_096",
+      "domain": "gaming",
+      "term": "frame rule",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Speedrunning / Game-Cycle Timing",
+      "real_usage_example": "I don't know it as well as some people do, but there's one level where you hit a star block to save a frame rule.",
+      "source_url": "https://www.speedrun.com/forums/speedrunning/g0zxc"
+    },
+    {
+      "id": "gaming_097",
+      "domain": "gaming",
+      "term": "IL runs",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Speedrunning / Individual Levels",
+      "real_usage_example": "Probably the best way to learn a new run is to start out doing IL runs.",
+      "source_url": "https://www.speedrun.com/forums/speedrunning/w0dbr"
+    },
+    {
+      "id": "gaming_098",
+      "domain": "gaming",
+      "term": "Any%",
+      "linguistic_construction": "Community-specific Jargon",
+      "community_subcommunity": "Speedrunning / Completion Categories",
+      "real_usage_example": "To add onto the games listed here, pretty much any game with an ACE credits warp usually has Any% be less popular.",
+      "source_url": "https://www.speedrun.com/forums/speedrunning/cnnop"
+    },
+    {
+      "id": "gaming_099",
+      "domain": "gaming",
+      "term": "IGT",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Speedrunning / In-Game Timing",
+      "real_usage_example": "• How do I setup IGT and RTA as both timing methods without creating unnecessary subcategories?",
+      "source_url": "https://www.speedrun.com/forums/the_site/7xmpj"
+    },
+    {
+      "id": "gaming_100",
+      "domain": "gaming",
+      "term": "pause storage",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Speedrunning / Glitch Routing",
+      "real_usage_example": "linny356 5 years ago L50: Actually, this is not pause storage.",
+      "source_url": "https://www.speedrun.com/forums/speedrunning/698af"
+    },
+    {
+      "id": "gaming_101",
+      "domain": "gaming",
+      "term": "OOB",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Speedrunning / Out-of-Bounds Routing",
+      "real_usage_example": "I want to make a video focused on the OOB; this game commonly uses out-of-map glitches in speedruns.",
+      "source_url": "https://www.speedrun.com/forums/speedrunning/caibg"
+    },
+    {
+      "id": "gaming_102",
+      "domain": "gaming",
+      "term": "PB",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Speedrunning / Personal Records",
+      "real_usage_example": "Should I upload every PB?",
+      "source_url": "https://www.speedrun.com/forums/speedrunning/1i9br"
+    },
+    {
+      "id": "gaming_103",
+      "domain": "gaming",
+      "term": "NMS",
+      "linguistic_construction": "Initialism",
+      "community_subcommunity": "Speedrunning / Major-Glitch Restrictions",
+      "real_usage_example": "First completed NMS PB with the new ruleset. Overall, a pretty good run with a few painful mistakes.",
+      "source_url": "https://www.speedrun.com/ff7/runs/mr0gjjgm"
+    },
+    {
+      "id": "gaming_104",
+      "domain": "gaming",
+      "term": "glitchless",
+      "linguistic_construction": "Affixation",
+      "community_subcommunity": "Speedrunning / Restricted Categories",
+      "real_usage_example": "There are many possible terms in the \"glitchless\" section, and they vary for each game, and also for what the community of the game decides.",
+      "source_url": "https://www.speedrun.com/forums/speedrunning/on2wd"
+    },
+    {
+      "id": "gaming_105",
+      "domain": "gaming",
+      "term": "wall clipping",
+      "linguistic_construction": "Metaphor",
+      "community_subcommunity": "Speedrunning / Collision Glitches",
+      "real_usage_example": "Wall Clipping using a cube",
+      "source_url": "https://www.speedrun.com/forums/speedrunning/37ies"
+    },
+    {
+      "id": "gaming_106",
+      "domain": "gaming",
+      "term": "segmented run",
+      "linguistic_construction": "Compound",
+      "community_subcommunity": "Speedrunning / Tool-Assisted Routing",
+      "real_usage_example": "Finish the segmented run I'm working on",
+      "source_url": "https://www.speedrun.com/forums/speedrunning/u5ga6"
+    },
+    {
+      "id": "gaming_107",
+      "domain": "gaming",
+      "term": "boomer shooter",
+      "linguistic_construction": "Meme Expression",
+      "community_subcommunity": "Hacker News / Retro FPS",
+      "real_usage_example": "Had they made it a total \"boomer shooter\" I doubt it would have sold as well.",
+      "source_url": "https://news.ycombinator.com/item?id=25136342"
+    }
+  ]
+}
