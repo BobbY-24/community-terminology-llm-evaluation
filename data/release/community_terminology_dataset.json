@@ -1,6 +1,6 @@
 {
   "dataset_name": "Community-Specific Gaming and Cybersecurity Terminology",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "A curated dataset of niche and community-specific terminology from gaming and cybersecurity discussions, with authentic usage examples and traceable source URLs.",
   "schema": {
     "id": "Unique record identifier.",

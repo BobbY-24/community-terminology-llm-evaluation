@@ -18,6 +18,9 @@ from pypdf import PdfReader
 
 
 ROOT = Path(__file__).resolve().parents[1]
+RELEASE_VERSION = "1.0.0"
+RELEASE_DATE = "2026-08-06"
+VALIDATION_DATE = "2026-08-07"
 CONTROLLED_LABELS = {
     "Abbreviation",
     "Acronym",
@@ -89,8 +92,26 @@ PUBLICATION_ARCHIVE_PAIRS = [
     ("documentation/annotation_guideline.pdf", "archive/original_files/Community_Terminology_Annotation_Guideline.pdf"),
     ("documentation/pura_final_report.docx", "archive/original_files/PURA Final Report Guanjun Yan.docx"),
     ("data/source/refined_terminology_usage.xlsx", "archive/original_files/Refined_Terminology_Usage.xlsx"),
-    ("data/release/community_terminology_dataset.json", "archive/original_files/community_terminology_dataset(1).json"),
 ]
+README_REQUIRED_LINKS = {
+    "data/source/refined_terminology_usage.xlsx",
+    "data/release/community_terminology_dataset.json",
+    "documentation/annotation_guideline.pdf",
+    "documentation/annotation_guideline.docx",
+    "documentation/pura_final_report.pdf",
+    "documentation/pura_final_report.docx",
+    "docs/dataset_card.md",
+    "docs/methodology.md",
+    "docs/annotation_schema.md",
+    "docs/limitations_and_ethics.md",
+    "docs/future_experiments.md",
+    "docs/file_manifest.md",
+    "validation/validation_report.md",
+    "assets/domain_distribution.png",
+    "assets/linguistic_construction_distribution.png",
+    "CITATION.cff",
+    "LICENSE_NOTES.md",
+}
 
 
 def sha256(path: Path) -> str:
@@ -165,6 +186,16 @@ def load_workbook_records(result: Validation) -> tuple[list[dict], dict[str, int
 
 def validate_data(result: Validation) -> dict:
     payload = json.loads((ROOT / "data/release/community_terminology_dataset.json").read_text(encoding="utf-8"))
+    archived_payload = json.loads(
+        (ROOT / "archive/original_files/community_terminology_dataset(1).json").read_text(encoding="utf-8")
+    )
+    normalized_archive = dict(archived_payload)
+    normalized_archive["version"] = RELEASE_VERSION
+    result.check(
+        payload == normalized_archive,
+        "Publication JSON differs from the archived original only by the documented version normalization.",
+        "Publication JSON contains changes beyond the documented version normalization.",
+    )
     result.check(
         isinstance(payload, dict) and isinstance(payload.get("records"), list),
         "JSON release is a metadata object containing a records array.",
@@ -287,6 +318,47 @@ def validate_readme(result: Validation) -> None:
     ]
     missing = [heading for heading in headings if not re.search(rf"^##+\s+{re.escape(heading)}\s*$", readme, re.M | re.I)]
     result.check(not missing, "README contains all required sections.", f"README is missing required sections: {missing}")
+    targets = set(re.findall(r"!?\[[^\]]*\]\(([^)#]+)(?:#[^)]+)?\)", readme))
+    missing_links = sorted(README_REQUIRED_LINKS - targets)
+    broken_links = sorted(
+        target
+        for target in targets
+        if not urlparse(target).scheme and not target.startswith("#") and not (ROOT / target).exists()
+    )
+    result.check(
+        not missing_links and not broken_links,
+        "README contains all required artifact links and every relative target exists.",
+        f"README link issues: missing={missing_links}, broken={broken_links}",
+    )
+
+
+def validate_release_metadata(result: Validation) -> None:
+    checks = {
+        "data/release/community_terminology_dataset.json": (
+            json.loads((ROOT / "data/release/community_terminology_dataset.json").read_text(encoding="utf-8")).get("version")
+            == RELEASE_VERSION
+        ),
+        "validation/dataset_summary.json": (
+            json.loads((ROOT / "validation/dataset_summary.json").read_text(encoding="utf-8")).get("release_version")
+            == RELEASE_VERSION
+        ),
+        "CITATION.cff": (
+            f"version: {RELEASE_VERSION}" in (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+            and f"date-released: {RELEASE_DATE}" in (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+        ),
+        "CHANGELOG.md": (
+            f"## [{RELEASE_VERSION}] - {RELEASE_DATE}" in (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
+        ),
+        "README.md": (
+            f"Version {RELEASE_VERSION}" in (ROOT / "README.md").read_text(encoding="utf-8")
+        ),
+    }
+    inconsistent = sorted(path for path, valid in checks.items() if not valid)
+    result.check(
+        not inconsistent,
+        f"Release metadata is consistent at version {RELEASE_VERSION} dated {RELEASE_DATE}.",
+        f"Inconsistent release metadata: {inconsistent}",
+    )
 
 
 def validate_checksums(result: Validation) -> None:
@@ -309,8 +381,11 @@ def write_report(result: Validation) -> None:
     lines = [
         "# Validation report",
         "",
-        "Release: **1.0.0**  ",
-        "Validation date: **2026-08-06**",
+        f"Release: **{RELEASE_VERSION}**",
+        "",
+        f"Release date: **{RELEASE_DATE}**",
+        "",
+        f"Validation date: **{VALIDATION_DATE}**",
         "",
         "## Outcome",
         "",
@@ -329,7 +404,7 @@ def write_report(result: Validation) -> None:
             "",
             "## Scope and interpretation",
             "",
-            "This validation checks structure, counts, controlled labels, required fields, cross-format equality, file identity, PDF page/text presence, image dimensions, and recorded checksums. It validates URL syntax but deliberately does not require live URL retrieval: community pages can be edited, deleted, blocked, or rate-limited. It also does not treat automated checks as a substitute for additional expert annotation or inter-annotator agreement measurement.",
+            "This validation checks structure, counts, controlled labels, required fields, cross-format equality, file identity or documented record-level equivalence, release metadata, README links, PDF page/text presence, image dimensions, and recorded checksums. It validates URL syntax but deliberately does not require live URL retrieval: community pages can be edited, deleted, blocked, or rate-limited. It also does not treat automated checks as a substitute for additional expert annotation or inter-annotator agreement measurement.",
             "",
         ]
     )
@@ -347,6 +422,7 @@ def main() -> int:
     validate_data(result)
     validate_documents_and_assets(result)
     validate_readme(result)
+    validate_release_metadata(result)
     validate_checksums(result)
     if args.write_report:
         write_report(result)

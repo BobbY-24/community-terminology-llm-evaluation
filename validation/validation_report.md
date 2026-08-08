@@ -1,11 +1,14 @@
 # Validation report
 
-Release: **1.0.0**  
-Validation date: **2026-08-06**
+Release: **1.0.0**
+
+Release date: **2026-08-06**
+
+Validation date: **2026-08-07**
 
 ## Outcome
 
-**PASS** - 33 checks passed, 1 warning(s), and 0 failure(s).
+**PASS** - 35 checks passed, 1 warning(s), and 0 failure(s).
 
 ## Passed checks
 
@@ -14,7 +17,7 @@ Validation date: **2026-08-06**
 - Publication copy is byte-identical to its archived source: documentation/annotation_guideline.pdf
 - Publication copy is byte-identical to its archived source: documentation/pura_final_report.docx
 - Publication copy is byte-identical to its archived source: data/source/refined_terminology_usage.xlsx
-- Publication copy is byte-identical to its archived source: data/release/community_terminology_dataset.json
+- Publication JSON differs from the archived original only by the documented version normalization.
 - JSON release is a metadata object containing a records array.
 - JSON contains 181 records.
 - JSON domain counts are cybersecurity=74 and gaming=107.
@@ -39,8 +42,10 @@ Validation date: **2026-08-06**
 - documentation/pura_final_report.pdf has no text-empty pages.
 - assets/domain_distribution.png has publication-readable dimensions (1600x900).
 - assets/linguistic_construction_distribution.png has publication-readable dimensions (1900x1350).
-- README prose length is within target (1533 words).
+- README prose length is within target (1560 words).
 - README contains all required sections.
+- README contains all required artifact links and every relative target exists.
+- Release metadata is consistent at version 1.0.0 dated 2026-08-06.
 - All recorded SHA-256 checksums match.
 
 ## Warnings
@@ -53,4 +58,4 @@ Validation date: **2026-08-06**
 
 ## Scope and interpretation
 
-This validation checks structure, counts, controlled labels, required fields, cross-format equality, file identity, PDF page/text presence, image dimensions, and recorded checksums. It validates URL syntax but deliberately does not require live URL retrieval: community pages can be edited, deleted, blocked, or rate-limited. It also does not treat automated checks as a substitute for additional expert annotation or inter-annotator agreement measurement.
+This validation checks structure, counts, controlled labels, required fields, cross-format equality, file identity or documented record-level equivalence, release metadata, README links, PDF page/text presence, image dimensions, and recorded checksums. It validates URL syntax but deliberately does not require live URL retrieval: community pages can be edited, deleted, blocked, or rate-limited. It also does not treat automated checks as a substitute for additional expert annotation or inter-annotator agreement measurement.

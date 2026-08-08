@@ -29,11 +29,11 @@ This makes community terminology a useful test bed for lexical-semantic evaluati
 - [Spreadsheet research release](data/source/refined_terminology_usage.xlsx) with `Cybersecurity`, `Gaming`, and `Source Audit` sheets.
 - [Machine-readable JSON release](data/release/community_terminology_dataset.json) with release metadata and 181 records.
 - [PDF annotation guideline](documentation/annotation_guideline.pdf) and [editable DOCX guideline](documentation/annotation_guideline.docx).
-- [PURA final report](documentation/pura_final_report.pdf) and its editable DOCX source.
+- [PURA final report](documentation/pura_final_report.pdf) and its [editable DOCX source](documentation/pura_final_report.docx).
 - [Dataset card](docs/dataset_card.md), [methodology](docs/methodology.md), [annotation schema](docs/annotation_schema.md), and [limitations and ethics](docs/limitations_and_ethics.md).
 - [Proposed future experiments](docs/future_experiments.md), framed separately from completed work.
 - Reproducible summary generation, charts, checksums, and a [validation report](validation/validation_report.md).
-- Byte-identical archived originals in `archive/original_files/`.
+- Archived originals in `archive/original_files/`; publication copies are byte-identical except for the JSON release-version normalization documented in the [file manifest](docs/file_manifest.md).
 
 ## Dataset at a glance
 
@@ -146,7 +146,7 @@ python scripts/generate_summary.py --check
 python scripts/validate_artifact.py
 ```
 
-The validator checks required files, archived/publication byte identity, workbook sheets and headers, JSON fields and IDs, domain and construction counts, controlled labels, workbook-to-JSON equality, URL syntax, PDF page/text presence, chart dimensions, README structure, and recorded checksums. It does not require live network access because online community pages can be volatile or rate-limited.
+The validator checks required files, archived/publication identity or documented record-level equivalence, release metadata, workbook sheets and headers, JSON fields and IDs, domain and construction counts, controlled labels, workbook-to-JSON equality, README links, URL syntax, PDF page/text presence, chart dimensions, README structure, and recorded checksums. It does not require live network access because online community pages can be volatile or rate-limited.
 
 ## Completed project outcomes
 

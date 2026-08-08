@@ -55,7 +55,7 @@ The workflow follows several principles from the supplied guideline:
 
 The final spreadsheet contains `Cybersecurity`, `Gaming`, and `Source Audit` sheets. The two domain sheets have the same five core columns and contain 74 and 107 records, respectively. The JSON release wraps 181 records in a metadata object and assigns stable sequential IDs.
 
-Repository curation preserved byte-identical originals, normalized publication filenames, recomputed all summary statistics from the record-level data, compared the workbook and JSON field by field, validated the 15-label controlled vocabulary, generated data-derived charts, and converted the PURA report to a visually verified three-page PDF. No disagreements requiring a derived correction were found.
+Repository curation preserved byte-identical originals, normalized publication filenames and the JSON release-version metadata, recomputed all summary statistics from the record-level data, compared the workbook and JSON field by field, validated the 15-label controlled vocabulary, generated data-derived charts, and converted the PURA report to a visually verified three-page PDF. No record-level disagreements requiring a derived correction were found.
 
 ## Relationship to future evaluation
 

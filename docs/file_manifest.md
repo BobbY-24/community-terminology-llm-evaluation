@@ -5,7 +5,7 @@
 | Path | Role | Provenance |
 |---|---|---|
 | `data/source/refined_terminology_usage.xlsx` | Spreadsheet research release | Byte-identical publication copy of the supplied workbook. |
-| `data/release/community_terminology_dataset.json` | Machine-readable release | Byte-identical publication copy of the supplied JSON. |
+| `data/release/community_terminology_dataset.json` | Machine-readable release | Publication copy of the supplied JSON with only the release version normalized to `1.0.0`; all 181 records are unchanged. |
 | `documentation/annotation_guideline.docx` | Editable guideline | Byte-identical publication copy of the supplied DOCX. |
 | `documentation/annotation_guideline.pdf` | Fixed-layout guideline | Byte-identical publication copy of the supplied PDF. |
 | `documentation/pura_final_report.docx` | Editable final report | Byte-identical publication copy of the supplied DOCX. |
@@ -30,4 +30,4 @@ The five files below preserve the delivered bytes. The source attachment names f
 
 ## Derived-versus-original policy
 
-No record-level correction was required because the spreadsheet and JSON releases agree exactly. If a future discrepancy is found, maintainers should preserve the originals, document the issue in the changelog and validation report, and make only the smallest defensible change in a versioned derived release.
+No record-level correction was required because the spreadsheet and JSON releases agree exactly. The publication JSON differs from the archived original only in its top-level release-version metadata (`1.0.0` rather than `1.0`) so that repository release metadata is consistent. If a future record discrepancy is found, maintainers should preserve the originals, document the issue in the changelog and validation report, and make only the smallest defensible change in a versioned derived release.

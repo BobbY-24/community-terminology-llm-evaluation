@@ -19,3 +19,4 @@ All notable changes to this research artifact are documented here.
 - Workbook and JSON agree across all 181 records.
 - All 15 controlled linguistic-construction labels are represented.
 - One source URL is shared by two distinct records and is retained without silent correction.
+- The publication JSON release-version metadata was normalized from `1.0` to `1.0.0`; no record content changed.
